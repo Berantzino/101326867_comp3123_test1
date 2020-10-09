@@ -13,7 +13,7 @@ var fs = require('fs');
 var path = require('path');
 
 const remove = () => {
-
+    // TODO
 }
 
 const add = () => {
@@ -21,8 +21,6 @@ const add = () => {
     if (!fs.existsSync('./Logs')) {
         fs.mkdirSync('./Logs');
     }
-
-
 
     for (let i = 0; i < 10; i++) {
         let fileName = `log${i}.txt`
@@ -34,4 +32,5 @@ const add = () => {
         })
     }
 }
+
 add()
